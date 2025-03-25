@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Bilibili 标签过滤器",
+  "version": "1.0",
+  "description": "检查Bilibili视频标签是否与期望的内容相关，不相关则提示并关闭",
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.bilibili.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.jpg",
+      "48": "images/icon48.jpg",
+      "128": "images/icon128.jpg"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.bilibili.com/video/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["*.js"],
+      "matches": ["https://*.bilibili.com/*"]
+    }
+  ],
+  "icons": {
+    "16": "images/icon16.jpg",
+    "48": "images/icon48.jpg",
+    "128": "images/icon128.jpg"
+  }
+}

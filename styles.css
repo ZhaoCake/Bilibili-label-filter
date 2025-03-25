@@ -1,0 +1,58 @@
+body {
+  font-family: 'Microsoft YaHei', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 300px;
+  padding: 15px;
+}
+
+h2 {
+  color: #00a1d6;
+  margin-top: 0;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #00a1d6;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0091c2;
+}
+
+#clearBtn {
+  background-color: #fb7299;
+}
+
+#clearBtn:hover {
+  background-color: #e06288;
+}
+
+#status {
+  margin-top: 10px;
+  color: green;
+  text-align: center;
+  height: 20px;
+}

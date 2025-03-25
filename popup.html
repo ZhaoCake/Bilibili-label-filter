@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bilibili 标签过滤器</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Bilibili 标签过滤器</h2>
+    <p>请输入您期望的视频标签关键词（用英文逗号分隔）：</p>
+    <textarea id="expectedTags" rows="5" placeholder="例如：编程,技术,教程"></textarea>
+    <div class="buttons">
+      <button id="saveBtn">保存</button>
+      <button id="clearBtn">清除</button>
+    </div>
+    <div id="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
